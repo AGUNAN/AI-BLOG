@@ -21,8 +21,19 @@ const Header = () => {
             story starts right here.`
           </p>
 
-          <form>
-            <input placeholder="search blog" type="text" />
+          <form className="flex justify-between max-w-lg max-sm:scale-75 mx-auto border border-gray-300 bg-white rounded overflow-hidden">
+            <input
+              className="w-full pl-4 outline-none"
+              required
+              placeholder="search for blogs"
+              type="text"
+            />
+            <button
+              type="submit"
+              className="bg-primary text-white px-8 py-2 m-1.5 rounded hover:scale-105 transsition-all cursor-pointer"
+            >
+              Search
+            </button>
           </form>
         </div>
       </div>
